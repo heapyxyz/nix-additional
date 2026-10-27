@@ -37,7 +37,7 @@ let
 
   setupScript = pkgs.writeShellScript "mssql-server-setup" ''
     export MSSQL_SA_PASSWORD="$(cat "$CREDENTIALS_DIRECTORY/sa-password")"
-    exec ${cfg.package}/opt/mssql/bin/mssql-conf setup --noprompt
+    exec ${cfg.package}/opt/mssql/bin/mssql-conf --noprompt setup
   '';
 in
 {
