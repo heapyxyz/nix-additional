@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./mssql-server.nix
+  ];
+}
