@@ -16,6 +16,7 @@ let
     findutils
     gawk
     glibc.bin
+    glibc.getent
     gnugrep
     gnused
     gnutar
@@ -24,6 +25,7 @@ let
     procps
     python3
     shadow
+    shadow.su
     systemd
     util-linux
   ];
