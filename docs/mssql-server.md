@@ -87,4 +87,3 @@ The module links the package to `/opt/mssql`, so tools such as `/opt/mssql/bin/m
 
 - Open the firewall yourself if you need remote access. For example: `networking.firewall.allowedTCPPorts = [ 1433 ];`
 - The default `Developer` edition is for development and testing. Check the Microsoft license before using another edition in production.
-- The package builds and the module evaluates, but the first-run setup has not been tested in a VM yet.

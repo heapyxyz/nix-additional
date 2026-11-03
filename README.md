@@ -2,34 +2,25 @@
 
 This repository contains Nix packages and NixOS modules.
 
-## Packages
+## Packages and Modules
 
 ### `mssql-server`
 
-Microsoft SQL Server 2025 for `x86_64-linux`.
-
-The package is unfree. Set `nixpkgs.config.allowUnfree = true` before you use it.
-
-Build it with:
-
-```bash
-nix build .#mssql-server
-```
-
-## Modules
-
-### `services.mssql-server`
-
-Runs SQL Server and can set up the database on first boot.
+Microsoft SQL Server 2025 for Linux.
 
 See [docs/mssql-server.md](docs/mssql-server.md) for setup and options.
 
+### `blur-my-shell`
+
+GNOME extension that adds a blur look different parts of the GNOME Shell.
+
+See [docs/blur-my-shell.md](docs/blur-my-shell.md) for setup.
+
 ## Flake Outputs
 
+- `packages.x86_64-linux.blur-my-shell`
 - `packages.x86_64-linux.mssql-server`
 - `nixosModules.default`
 - `nixosModules.mssql-server`
-- `overlays.default`
+- `overlays.blur-my-shell`
 - `overlays.mssql-server`
-
-There is no `packages.default` alias. Build the package by name.

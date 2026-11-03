@@ -28,7 +28,19 @@
       };
 
       overlays = {
-        default = final: prev: import ./packages { pkgs = final; };
+        blur-my-shell =
+          final: prev:
+          let
+            package = final.callPackage ./packages/blur-my-shell.nix {
+              gnomeExtensions = prev.gnomeExtensions;
+            };
+          in
+          {
+            blur-my-shell = package;
+            gnomeExtensions = prev.gnomeExtensions // {
+              blur-my-shell = package;
+            };
+          };
         mssql-server = final: prev: {
           mssql-server = final.callPackage ./packages/mssql-server.nix { };
         };
