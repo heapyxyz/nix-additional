@@ -1,8 +1,8 @@
-# Blur my Shell
+# `blur-my-shell`
 
 This repo provides the Blur my Shell GNOME Shell extension, newer than the version currently in nixpkgs.
 
-## Add the Overlay
+## Add the overlay
 
 Add this repo as a flake input:
 

@@ -1,10 +1,10 @@
-# Microsoft SQL Server
+# `mssql-server`
 
 This repo provides Microsoft SQL Server 2025 as a Nix package and a NixOS module.
 
 It only works on `x86_64-linux`. The package is unfree, so you need to allow unfree packages.
 
-## Add the Module
+## Add the module
 
 Add this repo as a flake input:
 
@@ -31,7 +31,7 @@ Then enable the module in your NixOS configuration:
 }
 ```
 
-## First Start
+## First start
 
 The module creates the `mssql` user and the data directories. On the first boot, it also sets up the database automatically.
 

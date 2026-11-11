@@ -2,7 +2,7 @@
 
 This repository contains Nix packages and NixOS modules.
 
-## Packages and Modules
+## Packages and modules
 
 ### `mssql-server`
 
@@ -16,7 +16,7 @@ GNOME extension that adds a blur look different parts of the GNOME Shell.
 
 See [docs/blur-my-shell.md](docs/blur-my-shell.md) for setup.
 
-## Flake Outputs
+## Flake outputs
 
 - `packages.x86_64-linux.blur-my-shell`
 - `packages.x86_64-linux.mssql-server`
