@@ -28,11 +28,11 @@
 
 stdenvNoCC.mkDerivation {
   pname = "mssql-server";
-  version = "17.0.5005.3";
+  version = "17.0.5045.3";
 
   src = fetchurl {
-    url = "https://packages.microsoft.com/ubuntu/24.04/mssql-server-2025/pool/main/m/mssql-server/mssql-server_17.0.5005.3-1_amd64.deb";
-    hash = "sha256-JJQUPta5khwHjlbAw4d+UBTWqZj8GZV/5oV6NKc3Bh4=";
+    url = "https://packages.microsoft.com/ubuntu/24.04/mssql-server-2025/pool/main/m/mssql-server/mssql-server_17.0.5045.3-4_amd64.deb";
+    hash = "sha256-hVQ2IZR+61jhhqy2TPvb9XKVV4XywBAWgHErW5fKz5U=";
   };
 
   nativeBuildInputs = [
