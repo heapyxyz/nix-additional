@@ -31,6 +31,9 @@
         apple-cursor = final: prev: {
           apple-cursor = final.callPackage ./packages/apple-cursor.nix { };
         };
+        mactahoe-icon-theme = final: prev: {
+          mactahoe-icon-theme = final.callPackage ./packages/mactahoe-icon-theme.nix { };
+        };
         blur-my-shell =
           final: prev:
           let
