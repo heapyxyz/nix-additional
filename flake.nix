@@ -28,6 +28,9 @@
       };
 
       overlays = {
+        apple-cursor = final: prev: {
+          apple-cursor = final.callPackage ./packages/apple-cursor.nix { };
+        };
         blur-my-shell =
           final: prev:
           let
