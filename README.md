@@ -6,7 +6,7 @@ This repository contains Nix packages and NixOS modules.
 
 ### `apple-cursor`
 
-macOS cursor theme that works on GNOME 51.
+MacOS cursor theme that works on GNOME 51.
 
 See [docs/apple-cursor.md](docs/apple-cursor.md) for setup.
 

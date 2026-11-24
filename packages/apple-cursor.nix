@@ -28,7 +28,7 @@ stdenvNoCC.mkDerivation {
   '';
 
   meta = {
-    description = "macOS cursors";
+    description = "MacOS cursors for newer DE SVG implementation";
     homepage = "https://github.com/Neutrovertido/macOS-monterey-cursor";
     license = lib.licenses.gpl3Only;
     platforms = lib.platforms.linux;
